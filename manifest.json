@@ -1,0 +1,26 @@
+{
+    "name": "JioFi - Battery alerts",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "notifications",
+        "activeTab",
+        "http://jiofi.local.html/"
+    ],
+    "background" : {
+        "scripts" : ["js/background.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "images/icon48.png"
+    ],
+    "icons": {
+        "16": "images/app_icon.png",
+        "48": "images/app_icon.png",
+        "128": "images/app_icon.png"
+    },
+    "browser_action": {
+        "default_icon": "images/app_icon.png",
+        "default_title": "JioFi battery"
+    }
+}
